@@ -241,7 +241,7 @@ document.addEventListener("DOMContentLoaded", function () {
             // FIXED: Properly send form data with correct parameter names
             const formData = new URLSearchParams();
             formData.append('paymentId', response.razorpay_payment_id);
-            formData.append('OrderId', response.razorpay_order_id);  // Note: Capital 'O' to match backend
+            formData.append('OrderId', response.razorpay_Order_id);  // Note: Capital 'O' to match backend
             formData.append('status', 'SUCCESS');
 
             console.log("Sending update request with:", {
@@ -340,4 +340,5 @@ document.addEventListener("DOMContentLoaded", function () {
       }
   `;
   document.head.appendChild(style);
+
 });
